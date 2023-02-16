@@ -1,0 +1,49 @@
+   
+products app ->    
+                Products :
+                    - name
+                    - flag [new - sale - feature]
+                    - image , images
+                    - price
+                    - reviews
+                    - subtitle
+                    - tags
+                    - brand
+                    - sku
+                    - category
+
+                Category :
+                    - name
+                    - image
+
+
+                brand :
+                    - name
+                    - image
+
+
+orders app ->
+
+                orders :
+                    - code
+                    - order_time
+                    - delivery_time
+                    - status [received - processed - shipped - delivered ]
+
+                order detail : 
+                    - product
+                    - quantity
+                    - price 
+                    - total
+
+settings app -> 
+
+                manage details of the website like
+                logo - phone numbers - copyrights ets
+
+
+accounts app -> 
+
+                manage user and his details 
+                
+

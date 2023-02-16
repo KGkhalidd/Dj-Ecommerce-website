@@ -18,6 +18,7 @@ class Product(models.Model):
     desc=models.TextField(_("Description"), max_length=10000)
     flag=models.CharField(_("Flag"), max_length=10, choices=PRODUCT_FLAG)
     price= models.FloatField(_("Price"))
+    image=models.ImageField(_("Image"), upload_to='products')
     tags= TaggableManager()
     category = models.ForeignKey( 'Category', related_name='product_category', verbose_name=_('Category'), on_delete=models.SET_NULL , null=True, blank=True )
     brand= models.ForeignKey( "Brand", related_name='product_brand',verbose_name=_('Brand'), on_delete=models.SET_NULL, null=True,blank=True)
