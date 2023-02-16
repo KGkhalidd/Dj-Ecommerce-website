@@ -15,7 +15,7 @@ class Product(models.Model):
     name =models.CharField(_("Name"), max_length=100)
     sku= models.IntegerField(_("SKU"))
     subtitle= models.CharField(_("Subtitle"), max_length=300)
-    desc=models.CharField(_("Description"), max_length=10000)
+    desc=models.TextField(_("Description"), max_length=10000)
     flag=models.CharField(_("Flag"), max_length=10, choices=PRODUCT_FLAG)
     price= models.FloatField(_("Price"))
     tags= TaggableManager()
@@ -32,7 +32,7 @@ class ProductImages(models.Model):
     image=models.ImageField(_("Image"), upload_to='productimages')
 
     def __str__(self):
-        return str(self.name)
+        return str(self.product)
 
 
 class ProductReview(models.Model):
