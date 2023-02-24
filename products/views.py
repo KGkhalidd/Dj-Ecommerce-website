@@ -7,7 +7,7 @@ from  django.db.models import Count
 
 class ProductList(ListView):
     model = Product
-    paginate_by= 50
+    paginate_by= 100
 
 
 class ProductDetail(DetailView):

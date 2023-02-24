@@ -41,7 +41,7 @@ def seed_category(n):
 
 def seed_products(n):
     fake= Faker()
-    images = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg']
+    images = ['1.jpg','2.jpg','3.jpg','4.jpg','5.png','6.jpg','7.jpg','8.jpg']
     flag_type = ['New','Sale','Feature']
 
     for _ in range(n):
