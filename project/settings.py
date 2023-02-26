@@ -40,17 +40,21 @@ INSTALLED_APPS = [
 
     'django_summernote',
     "taggit",
-
+    "debug_toolbar",
+    
     'products',
     'orders',
     'accounts',
     'settings',
+
+    
 
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -142,3 +146,9 @@ MEDIA_ROOT= BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+INTERNAL_IPS = [
+    
+    "127.0.0.1",
+    
+]

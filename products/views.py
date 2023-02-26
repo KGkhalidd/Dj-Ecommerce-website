@@ -24,6 +24,7 @@ class ProductDetail(DetailView):
 
 class BrandList(ListView):
     model= Brand
+    #paginate_by= 5
 
 
     def get_context_data(self, **kwargs):
@@ -51,6 +52,7 @@ class BrandDetail(DetailView):
 
 class CategoryList(ListView):
     model= Category
+    #paginate_by= 5
 
 
     def get_context_data(self, **kwargs):
