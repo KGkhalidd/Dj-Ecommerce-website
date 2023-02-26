@@ -5,6 +5,11 @@ from  django.db.models import Count
 
 # Create your views here.
 
+def post_list(request):
+    objects=Product.objects.all()
+    return render(request , 'products/test_list.html',{'products':objects} )
+
+
 class ProductList(ListView):
     model = Product
     paginate_by= 100
