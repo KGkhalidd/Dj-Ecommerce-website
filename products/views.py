@@ -34,7 +34,7 @@ def post_list(request):
     #     Name_Flag= Concat('name', Value(' -> '), 'flag')
 
     # ) 
-    objects=Product.objects.aggregate(Sum('price'), Max('price'))
+    objects=Product.objects.price_greater_than(90)
 
     return render(request , 'products/test_list.html',{'products':objects} )
 
