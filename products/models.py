@@ -28,6 +28,9 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    def get_avg(self):
+        pass
+
 
 class ProductImages(models.Model):
     product = models.ForeignKey("Product", verbose_name=_("Product"), related_name='productimages_product', on_delete=models.SET_NULL, null=True, blank=True)

@@ -9,7 +9,7 @@
 <body>
     <ul>
         {% for product in products %}
-            <li>{{product}} - {{product.price}} </li>
+            <li>{{product}} - {{product.get_avg}} </li>
         {% endfor %}
     </ul>
 </body>
