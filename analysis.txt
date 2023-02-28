@@ -69,4 +69,12 @@ accounts app ->
 
                 we will split phone number in class cause it is multiple
                 
+------------------------------------------------------
+signals in django -> once user make sign up the profile will created
+types of signals :
+                pre -> before  delete init save
+                post -> after  delete init save
+                many2many
+
+
 
