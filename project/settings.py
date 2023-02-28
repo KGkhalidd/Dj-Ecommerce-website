@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_summernote',
     "taggit",
     "debug_toolbar",
+    'django_countries',
     
     'products',
     'orders',

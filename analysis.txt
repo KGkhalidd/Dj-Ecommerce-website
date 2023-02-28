@@ -45,5 +45,28 @@ settings app ->
 accounts app -> 
 
                 manage user and his details 
+
+
+                User :
+                    - username 
+                    - email 
+                    - address
+                    - image 
+                    - contact number 
+                    - favorites
+
+                    django user have :
+                                    - user name 
+                                    - first and last name
+                                    - password 
+                                    - email 
+
+                we have 3 types of users :
+                1- Base user 
+                2- abstract user 
+                3- one to one model -> we will use this 
+
+
+                we will split phone number in class cause it is multiple
                 
 
